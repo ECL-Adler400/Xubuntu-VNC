@@ -19,8 +19,4 @@ mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
 # Create a new xstartup file to launch Xfce desktop environment
 echo -e '#!/bin/sh\nxrdb $HOME/.Xresources\nstartxfce4 &' > ~/.vnc/xstartup
 
-# Start VNC server again
-USER=root vncserver
 
-# Start websockify to enable noVNC in the browser
-websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
