@@ -15,3 +15,4 @@ Once the Codespace is initialized, follow these steps:
 ```bash
 chmod +x setup-xubuntu.sh
 ./setup-xubuntu.sh
+
