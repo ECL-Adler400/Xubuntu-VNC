@@ -22,3 +22,8 @@ USER=root vncserver
 # Start websockify to enable noVNC in the browser
 Change the number 6081 with a unique 4x number combination
 websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6081 localhost:5901
+
+# Notizen
+vncserver -kill :1
+vncserver :1
+
