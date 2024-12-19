@@ -16,3 +16,8 @@ Once the Codespace is initialized, follow these steps:
 chmod +x setup-xubuntu.sh
 ./setup-xubuntu.sh
 
+# Start VNC server again
+USER=root vncserver
+
+# Start websockify to enable noVNC in the browser
+websockify -D --web=/usr/share/novnc/ --cert=/home/ubuntu/novnc.pem 6080 localhost:5901
